@@ -38,7 +38,7 @@ def init_network():
         network=pickle.load(f)
         return network
 
-def predict(network,x):
+def predict(network, x):
     W1,W2,W3=network['W1'],network['W2'],network['W3']
     b1,b2,b3=network['b1'],network['b2'],network['b3']
     a1=np.dot(x,W1)+b1
